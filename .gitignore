@@ -1,0 +1,11 @@
+node_modules
+bower_components
+libs/backup
+*.tmp
+*.bak
+*.swp
+dist
+build
+.DS_Store
+config
+public/uploads

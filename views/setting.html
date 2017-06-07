@@ -1,0 +1,16 @@
+<div id='content'>
+    <div class='panel'>
+        <div class='header'>
+            <ul class='breadcrumb'>
+                <li class='active'>Setting</li>
+            </ul>
+        </div>
+        <div class='inner'>
+            <select class="selectpicker">
+            <% for(var i = 0, len = mailType.length; i< len; i++) {%>
+                <option><%= mailType[i] %></option>
+            <% } %>
+            </select>
+        </div>
+    </div>
+</div>

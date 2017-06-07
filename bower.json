@@ -1,0 +1,29 @@
+{
+  "name": "webmail",
+  "version": "0.0.1",
+  "homepage": "https://github.com/honwlee/webmail.git",
+  "authors": [
+    "honwlee <lhw@hudaokeji.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "webmail",
+    "nodejs",
+    "mongoose",
+    "express"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "handlebars": "~4.0.10"
+  }
+}

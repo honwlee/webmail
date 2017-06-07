@@ -1,0 +1,130 @@
+{
+    "qq": {
+        "pop3": {
+            "host": "pop.qq.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.qq.com",
+            "port": "587"
+        },
+        "imap": {
+            "host": "imap.qq.com",
+            "port": "143"
+        }
+    },
+    "foxmail": {
+        "pop3": {
+            "host": "pop.foxmail.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.foxmail.com",
+            "port": "587"
+        }
+    },
+    "139": {
+        "pop3": {
+            "host": "pop.139.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.139.com",
+            "port": "587"
+        }
+    },
+    "189": {
+        "pop3": {
+            "host": "pop.189.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.189.com",
+            "port": "587"
+        }
+    },
+    "163": {
+        "pop3": {
+            "host": "pop.163.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.163.com",
+            "port": "587"
+        }
+    },
+    "163Vip": {
+        "pop3": {
+            "host": "pop.vip.163.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.vip.163.com",
+            "port": "587"
+        }
+    },
+    "126": {
+        "pop3": {
+            "host": "pop3.126.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.126.com",
+            "port": "587"
+        }
+    },
+    "gmail": {
+        "pop3": {
+            "host": "pop.gmail.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.gmail.com",
+            "port": "587"
+        },
+        "imap": {
+            "host": "imap.gmail.com",
+            "port": "465"
+        }
+    },
+    "yahoo": {
+        "pop3": {
+            "host": "pop.mail.yahoo.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.mail.yahoo.com",
+            "port": "587"
+        }
+    },
+    "hotmail": {
+        "pop3": {
+            "host": "pop3.live.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.live.com",
+            "port": "995"
+        }
+    },
+    "sogou": {
+        "pop3": {
+            "host": "pop3.mail.sogou.com",
+            "port": "995"
+        },
+        "smtp": {
+            "host": "smtp.mail.sogou.com",
+            "port": "587"
+        }
+    },
+    "hudaokeji": {
+        "pop3": {
+            "host": "pop.hudaokeji.com",
+            "port": "110"
+        },
+        "smtp": {
+            "host": "smtp.hudaokeji.com",
+            "port": "587"
+        }
+    }
+}

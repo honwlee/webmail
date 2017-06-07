@@ -1,0 +1,54 @@
+{
+  "name": "webemail",
+  "version": "0.0.1",
+  "description": "A simple web-mail based on nodejs.",
+  "author": "honwlee",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.16.0",
+    "bunyan": "^1.8.10",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.3",
+    "ejs": "~2.5.6",
+    "ejs-locals": "~1.0.2",
+    "express": "4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-partials": "~0.3.0",
+    "express-session": "^1.15.1",
+    "hbs": "~4.0.1",
+    "iconv": "^2.2.3",
+    "imap": "~0.8.19",
+    "lodash": "^4.17.4",
+    "lru-cache": "~4.0.2",
+    "mailparser": "0.6.2",
+    "markdown-js": "~0.0.3",
+    "method-override": "^2.3.7",
+    "moment": "~2.18.1",
+    "mongoose": "~4.9.9",
+    "morgan": "~1.7.0",
+    "node-poplib-gowhich": "^1.0.2",
+    "nodemailer": "2.3.0",
+    "optimist": "~0.6.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "q": "^1.4.1",
+    "toobusy-js": "~0.5.1",
+    "validator": "~7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "bower install",
+    "server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/honwlee/webmail.git"
+  },
+  "keywords": [
+    "node",
+    "mail",
+    "express",
+    "imap"
+  ],
+  "license": "MIT"
+}

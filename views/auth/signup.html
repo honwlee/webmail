@@ -1,0 +1,40 @@
+ <%- include sidebar.html %>
+
+<div id='content'>
+    <div class='panel'>
+        <div class='header'>
+            <ul class='breadcrumb'>
+                <li class='active'>注册</li>
+            </ul>
+        </div>
+        <div class='inner'>
+            <div class='sep10'></div>
+            <div class='sep10'></div>
+      <% var error = error||'' %>
+            <% if(error){ %>
+            <div class="alert alert-error">
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+                <strong><%= error %></strong>
+            </div>
+            <% } %>
+            <form id="local-reg" class="form-horizontal" action="/signup" method="post">
+                <div class='control-group'>
+                    <p></p>
+                    <label class='control-label'>New Username:</label>
+                    <div class='controls'>
+                        <input type="text" name="username"/>
+                    </div>
+                </div>
+                <div class='control-group'>
+                    <label class='control-label'>New Password:</label>
+                    <div class='controls'>
+                        <input type="password" name="password"/>
+                    </div>
+                </div>
+                <div  class='form-actions'>
+                    <input type="submit" class="btn btn-primary btn-sm" value="Register"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
