@@ -12,19 +12,19 @@ $ npm server
 ```  
 ## API
 * MAILS
-  * [GET]: api/webmail/mails/:id
-  * [POST]: api/webmail/mails
-  * [POST]: api/webmail/mails/mark
-  * [DELETE]: api/webmail/mails/:id
+  * 【GET】: api/webmail/mails/:id
+  * 【POST】: api/webmail/mails
+  * 【POST】: api/webmail/mails/mark
+  * 【DELETE】: api/webmail/mails/:id
 * ACCOUNTS
-  * [GET]: api/webmail/accounts
-  * [POST]: api/webmail/accounts/:id/refresh
-  * [DELETE]: api/webmail/accounts/:id/mails/empty
-  * [POST]: api/webmail/accounts/:id/mail/send
-  * [POST]: api/webmail/accounts/mails
-  * [POST]: api/webmail/accounts/add
-  * [POST]: api/webmail/accounts/:id
-  * [DELETE]: api/webmail/accounts/:id
+  * 【GET】: api/webmail/accounts
+  * 【POST】: api/webmail/accounts/:id/refresh
+  * 【DELETE】: api/webmail/accounts/:id/mails/empty
+  * 【POST】: api/webmail/accounts/:id/mail/send
+  * 【POST】: api/webmail/accounts/mails
+  * 【POST】: api/webmail/accounts/add
+  * 【POST】: api/webmail/accounts/:id
+  * 【DELETE】: api/webmail/accounts/:id
 
 ## Reference
 [nodeMailer](https://github.com/andris9/Nodemailer)  
