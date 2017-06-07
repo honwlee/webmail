@@ -23,7 +23,7 @@ $ npm server
   * 【POST】: api/webmail/accounts/:id/mail/send
   * 【POST】: api/webmail/accounts/mails
   * 【POST】: api/webmail/accounts/add
-  * 【POST】: api/webmail/accounts/:id
+  * 【POST】: api/webmail/accounts/:id
   * 【DELETE】: api/webmail/accounts/:id
 
 ## Reference
