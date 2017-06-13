@@ -14,11 +14,11 @@ exports.list = function(req, res) {
         if (req.body.flagged) opts.flagged = true;
         opts.deleted = { $ne: true };
     }
-    console.log('opts is --------------->');
-    console.log(req.body);
-    Mail.find(opts, function(error, mails) {
+    var page = req.body.page || 1,
+        limit = req.body.limit || 20;
+    Mail.paginate(opts, { page: page, limit: limit }, function(error, paginate) {
         if (error) res.send(error);
-        res.json(mails);
+        res.json(paginate);
     });
 };
 

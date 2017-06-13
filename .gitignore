@@ -7,5 +7,5 @@ libs/backup
 dist
 build
 .DS_Store
-config
+config.js
 public/uploads

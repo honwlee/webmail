@@ -1,13 +1,13 @@
 "use strict";
 
-var EventEmitter = require("events").EventEmitter;
-var util = require('util');
-var MailParser = require('mailparser').MailParser;
-var pop3 = require('./poplib');
-var notifier = require('./notifier');
+var bcrypt = require('bcryptjs'),
+    EventEmitter = require("events").EventEmitter,
+    util = require('util'),
+    MailParser = require('mailparser').MailParser,
+    pop3 = require('./poplib'),
+    notifier = require('./notifier'),
 
-var mailparser = new MailParser();
-
+    mailparser = new MailParser();
 module.exports.POP3 = POP3;
 module.exports.IMAP = IMAP;
 

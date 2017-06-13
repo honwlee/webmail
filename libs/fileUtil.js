@@ -25,7 +25,6 @@ exports.saveAttachments = function(attachments, callback) {
         var deferred = Q.defer(),
             url = path.join(uploadPath, attachment.file.name),
             response = decodeBase64Data(attachment.data);
-        console.log('url is ------------->' + url);
 
         fs.writeFile(url, response.data, function(err) {
             if (err) console.log(err);

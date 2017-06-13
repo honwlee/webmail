@@ -1,53 +1,21 @@
-var models = require('../../models');
 var mailUtil = require('../../libs/mailUtil');
+var models = require('../../models');
 var Account = models.Account;
 var Mail = models.Mail;
-var mailInfo;
-var fs = require('fs');
-var path = require('path');
 
-function readJsonFileSync(filepath, encoding) {
-    if (typeof(encoding) == 'undefined') {
-        encoding = 'utf8';
-    }
-    var file = fs.readFileSync(filepath, encoding);
-    return JSON.parse(file);
-}
-
-function getConfig(file) {
-    return readJsonFileSync(path.join(__dirname, file));
-}
-mailInfo = getConfig('../../data/mailInfo.json');
 
 exports.index = function(req, res) {
-    Account.find({}, function(error, accounts) {
-        if (error) res.send(error);
+    console.log("req.userId:", req.userId)
+    Account.find({ _owner: req.userId }).then(function(accounts) {
         res.json(accounts);
     });
 };
-exports.add = function(req, res) {
-    if (req.body._id) {
-        Account.findOneAndUpdate(req.body._id, req.body, { new: true }, function(error, account) {
-            if (error) res.send(error);
-            res.json(account);
-        })
-    } else {
-        req.body.pop3 = mailInfo[req.body.kind].pop3;
-        req.body.smtp = mailInfo[req.body.kind].smtp;
-        req.body.imap = mailInfo[req.body.kind].imap;
-        var account = new Account(req.body);
-        account.save(function(error, account) {
-            if (error) res.send(error);
-            return res.json(account);
-        });
-    }
-};
 
-exports.update = function(req, res) {
-    Account.findOneAndUpdate(req.params.id, req.body, { new: true }, function(error, account) {
-        if (error) res.send(error);
+exports.create = function(req, res) {
+    req.body._owner = req.userId;
+    Account.findOrCreateBy(req.body).then(function(account) {
         res.json(account);
-    })
+    });
 };
 
 exports.remove = function(req, res) {

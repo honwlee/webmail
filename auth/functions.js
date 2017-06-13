@@ -7,13 +7,10 @@ var User = require('../models/index').User;
 
 //used in local-signup strategy
 exports.localReg = function(username, password) {
-        console.log("22222222222222")
     var deferred = Q.defer();
     User.findOne({
         username: username
     }, function(error, result) {
-        console.log("11111111111111")
-        console.log(result);
         if (null != result) {
             console.log("USERNAME ALREADY EXISTS:", result.username);
             deferred.resolve(result); // username exists
@@ -41,9 +38,6 @@ exports.localReg = function(username, password) {
 //if user doesn't exist or password doesn't match tell them it failed
 exports.localAuth = function(username, password) {
     var deferred = Q.defer();
-    console.log(username);
-    console.log(password);
-    console.log("------11111")
     User.findOne({
         username: username
     }, function(error, result) {

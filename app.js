@@ -27,18 +27,6 @@ app.engine('md', function(path, options, fn) {
         fn(null, str);
     });
 });
-// var whitelist = ['http://localhost:9000']
-// var corsOptions = {
-//     origin: function(origin, callback) {
-//         if (whitelist.indexOf(origin) !== -1) {
-//             callback(null, true)
-//         } else {
-//             callback(new Error('Not allowed by CORS'))
-//         }
-//     }
-// }
-// app.use(cors(corsOptions));
-// Add headers
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -60,7 +48,7 @@ app.locals.csrf = function(req, res) {
 app.use(function(req, res, next) {
 
     // Website you wish to allow to connect
-    res.header('Access-Control-Allow-Origin', 'http://localhost:9000');
+    res.header('Access-Control-Allow-Origin', 'http://ube.ihudao.dt.hudaokeji.com:9000');
 
     // Request methods you wish to allow
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -75,6 +63,7 @@ app.use(function(req, res, next) {
     // Pass to next layer of middleware
     next();
 });
+// routes(app, agent.shield(cookieShield));
 routes(app);
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

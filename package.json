@@ -9,6 +9,7 @@
     "bunyan": "^1.8.10",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.3",
+    "debug": "^2.6.8",
     "ejs": "~2.5.6",
     "ejs-locals": "~1.0.2",
     "express": "4.15.2",
@@ -25,6 +26,7 @@
     "method-override": "^2.3.7",
     "moment": "~2.18.1",
     "mongoose": "~4.9.9",
+    "mongoose-paginate": "^5.0.3",
     "morgan": "~1.7.0",
     "node-poplib-gowhich": "^1.0.2",
     "nodemailer": "2.3.0",
@@ -37,7 +39,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "bower install",
+    "start": "bower install & npm install",
     "server": "node app.js"
   },
   "repository": {

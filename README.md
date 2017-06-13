@@ -8,7 +8,7 @@ a mail delivery platform for incoming & outgoing e-mail
 $ git clone https://github.com/honwlee/webmail.git 
 $ cd webmail  
 $ npm start
-$ npm server  
+$ npm run server  
 ```  
 ## API
 * MAILS
